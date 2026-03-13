@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Circuit Simulator</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="welcome-body">
+
+<div class="welcome-box">
+
+<h1>⚡Welcome to Circuit Simulator</h1>
+
+<p>Build simple electronic circuits with battery, resistor and LED.</p>
+
+<div class="menu">
+
+<button onclick="startSimulator()">Start</button>
+
+<button onclick="showInfo()">Menu</button>
+
+</div>
+
+<p id="info"></p>
+
+</div>
+
+<script>
+
+function startSimulator(){
+
+window.location.href="simulator.html";
+
+}
+
+function showInfo(){
+
+document.getElementById("info").innerHTML =
+"Create circuits, connect wires and simulate LED behavior.";
+
+}
+
+</script>
+<script src="script.js"></script>
+<script src="style.css"></script>
+<script src="simulator.html"></script>
+</body>
+</html>

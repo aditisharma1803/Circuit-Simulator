@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circuit Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚡ Circuit Simulator</h1>
+
+<div class="toolbar">
+
+<button onclick="addComponent('battery')">🔋 Battery</button>
+<button onclick="addComponent('resistor')">🟫 Resistor</button>
+<button onclick="addComponent('led')">LED</button>
+<button onclick="addComponent('bulb')">💡 Bulb</button>
+<button onclick="addComponent('capacitor')">Capacitor</button>
+<button onclick="addComponent('switch')">Switch</button>
+<button onclick="addComponent('arduino')">Arduino</button>
+<button onclick="startWire()">🔗 Wire</button>
+
+<br><button onclick="undo()">↩ Undo</button>
+<button onclick="redo()">↪ Redo</button>
+<button class="run" onclick="simulate()">▶ Run</button>
+
+</div>
+
+<div class="canvas-container">
+<canvas id="canvas" width="900" height="500"></canvas>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="style.css"></script>
+<script src="simulator.html"></script>
+</body>
+</html>
